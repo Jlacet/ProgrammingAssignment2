@@ -1,5 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
 
 ## makeCacheMatrix is setting up four functions in a list to calculate an inverse
 ## matrix in an economical way
@@ -32,6 +30,7 @@ cacheSolve <- function(x, ...) {
         inv <- x$getinverse()
         
         ## checking through getinverse if the inverse has been calculated before
+        ## if it has, it doesn't calculate again
         if(!is.null(inv)) {
                 message("getting cached data")
                 return(inv)
